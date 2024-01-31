@@ -8,8 +8,8 @@ const UserSchema=new Schema({
     contactNumber: {type: String},
     email: {type: String, unique: true},
     password: {type: String},
-    status: {type: String},
-    role: {type: String},
+    status: {type: Boolean, default: false},
+    role: {type: String, default: null},
 
 })
 
