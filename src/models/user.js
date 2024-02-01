@@ -9,7 +9,7 @@ const UserSchema=new Schema({
     email: {type: String, unique: true},
     password: {type: String},
     status: {type: Boolean, default: false},
-    role: {type: String, default: null},
+    role: {type: String, default: 'user'},
 
 })
 
